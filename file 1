@@ -1,0 +1,44 @@
+package com.example.mypackage;
+
+public class EmployeeAssign {
+int emp_code;
+String emp_name;
+
+public EmployeeAssign(int emp_code) {
+	
+	this.emp_code=emp_code;
+	
+	
+}
+
+
+public EmployeeAssign(String emp_name) {
+	this.emp_name=emp_name;
+}
+
+public EmployeeAssign() {
+	
+}
+public int getEmp_code() {
+	return emp_code;
+}
+
+
+public void setEmp_code(int emp_code) {
+	this.emp_code = emp_code;
+}
+
+
+public String getEmp_name() {
+	return emp_name;
+}
+
+
+public void setEmp_name(String emp_name) {
+	this.emp_name = emp_name;
+}
+public String toString(){
+	return emp_code+""+emp_name;
+	
+}
+}
