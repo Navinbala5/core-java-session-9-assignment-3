@@ -1,0 +1,36 @@
+package com.example.mypackage;
+
+import java.util.HashMap;
+import java.util.Map;
+import com.example.mypackage.*;
+
+public class TestEmp {
+public static void main(String[] args) {
+	
+	
+	EmployeeAssign emp2 = new EmployeeAssign(1005);
+	EmployeeAssign emp3 = new EmployeeAssign(1005);
+	
+	EmployeeAssign emp4 = new EmployeeAssign("bala");
+	EmployeeAssign emp5 = new EmployeeAssign("navin");
+	
+	Map<EmployeeAssign,EmployeeAssign> empMap=new HashMap<EmployeeAssign,EmployeeAssign>();
+
+	//Map<Integer,String> empMap2=new HashMap<Integer,String>();
+	
+	empMap.put(emp2,emp4);
+	empMap.put(emp3,emp5);
+	
+	//empMap2.put(1,"navin");
+	//empMap2.put(2, "bala");
+	
+	
+	System.out.println(empMap.entrySet());
+	System.out.println(empMap.get(emp2));
+	System.out.println(empMap.get(emp3));
+	
+	
+	
+	
+}
+}
